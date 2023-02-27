@@ -1,10 +1,10 @@
 function updateTimer() {
     let timeElement = document.getElementById("time");
-    let countDownDate = new Date("2022-08-06T09:26:00Z").getTime();
+    let countUpDate = new Date("2022-08-06T09:26:00Z").getTime();
     
     setInterval(() => {
         let now = new Date().getTime();
-        let timeDiff = countDownDate - now;
+        let timeDiff = now - countUpDate;
     
         let days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
         timeDiff %= (1000 * 60 * 60 * 24); // simplify with %=
